@@ -15,7 +15,11 @@ let contador = 0;
 //Criando o código de repetição WHILE
 //enquanto o contador for menos que o comprimento da lista, tocará o som.
 while(contador < listaDeTeclas.length) {
-    listaDeTeclas[contador].onclick = tocaSom;
+    const efeito = listaDeTeclas[contador].classList[1];
+    const idAudio = "#som_"+efeito;
+    listaDeTeclas[contador].onclick = function(){
+        tocaSom(idAudio)
+    };
     contador = contador + 1;
     console.log(contador);
 }
