@@ -13,6 +13,6 @@ for(let contador = 0;contador < listaDeTeclas.length;contador = contador++;) {
     const efeito = tecla.classList[1]; //chama a classe do indice 1 do som
     const idAudio = `#som_${efeito}`; //junção com template string
     tecla.onclick = function(){ //função anonima para tocaSom
-        tocaSom(idAudio)
+        tocaSom(idAudio);
     }
 }
