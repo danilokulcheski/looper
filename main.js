@@ -8,7 +8,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //Criando o código de repetição WHILE e mudando para FOR
 //enquanto o contador for menos que o comprimento da lista, tocará o som.
-for(let contador = 0;contador < listaDeTeclas.length;contador = contador++;) {
+for(let contador = 0;contador < listaDeTeclas.length;contador = contador++); 
     const tecla = listaDeTeclas[contador];
     const efeito = tecla.classList[1]; //chama a classe do indice 1 do som
     const idAudio = `#som_${efeito}`; //junção com template string
