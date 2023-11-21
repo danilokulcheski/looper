@@ -4,8 +4,6 @@ function tocaSom(idElementoAudio){
 }
 //criando a referencia constante listaDeTeclas
 const listaDeTeclas = document.querySelectorAll('.tecla');
-//criando referencia variável, atribuindo o valor inicial como "0"
-
 //Criando o código de repetição WHILE e mudando para FOR
 //enquanto o contador for menos que o comprimento da lista, tocará o som.
 for(let contador = 0;contador < listaDeTeclas.length;contador = contador++){
