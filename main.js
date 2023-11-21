@@ -16,7 +16,7 @@ for(let contador = 0;contador < listaDeTeclas.length;contador = contador++);
         tocaSom(idAudio);
     }
     tecla.onkeydown = function (evento) { //função para tecla pressionada
-       if(EventCounts.code != 'tab'{
+       if (EventCounts.code != 'tab'){
          tecla.classList.add('ativa');
     }
     tecla.onkeyup = function(){ //função para tecla despressionada
