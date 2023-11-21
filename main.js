@@ -1,6 +1,12 @@
 //criando/declarando a função tocaSom com parametro idElementoAudio
 function tocaSom(idElementoAudio){
-    document.querySelector(idElementoAudio).play();
+    const elemento = document.querySelector(idElementoAudio);
+    //condicional if (se) e else(senão) operador de comparação && (E)
+    if (elemento && elemento.localName === 'audio'){
+        elemento.play();
+    }else{
+        console.log("elemento inválido iu não encontrado");
+    }
 }
 //criando a referencia constante listaDeTeclas
 const listaDeTeclas = document.querySelectorAll('.tecla');
